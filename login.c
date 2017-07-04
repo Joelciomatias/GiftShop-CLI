@@ -52,7 +52,7 @@ void login(){
 	while(1){
 		system("cls");
 		printf(" //////////////////////////////////////////////////////////////////////\n");
-		printf("\n");
+		printf("\nLogin da gerência: admin@admin.com //senha: admin\n");
 		printf("                           SEJA BEM VINDO \n");
 		printf("\n");
 		printf(" //////////////////////////////////////////////////////////////////////\n\n");
