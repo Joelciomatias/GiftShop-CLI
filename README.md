@@ -8,4 +8,6 @@ para o projeto integrador do curso de ADS Uninter
 
 Vou colocar o passo a passo de instalação em breve
 
-#### CLICA NA ESTRELA no canto direito para me ajudar a Conquista das estrelas do github
+#### CLICA NA ESTRELA! no canto direito superior,
+para me ajudar a Conquista das estrelas do github
+
