@@ -7,6 +7,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h> // Inclui a biblioteca para o comando sleep
+#include <conio.h> // Depende do ambiente - pode não ser padrão em todos os compiladores
 
 // CONSTANTES PARA O BUFFERS DE TECLADO E OUTROS
 #define MAX 30

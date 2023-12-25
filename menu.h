@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+#include <unistd.h> // Inclui a biblioteca para o comando sleep
 #include "pessoa.h"
 #include "produtos.h"
 #include "selecao.h"

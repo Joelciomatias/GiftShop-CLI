@@ -1,8 +1,8 @@
 [Project]
 FileName=Loja PBL.dev
-Name=Loja PBL
+Name=Loja
 Type=1
-Ver=2
+Ver=1
 ObjFiles=
 Includes=
 Libs=
@@ -28,7 +28,7 @@ Folders=
 IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
-CompilerSettings=0000000000000000000000000
+CompilerSettings=0000000000000000000000
 UnitCount=15
 
 [VersionInfo]
