@@ -20,6 +20,5 @@ gcc main.c pessoa.c login.c menu.c produtos.c selecao.c vendas.c cartao.c  -o Lo
     ./Loja
 ```
 
-#### CLICA NA ESTRELA! no canto direito superior,
-para me ajudar a Conquista das estrelas do github
+#### CLICA NA ESTRELA! no canto direito superior para me ajudar a Conquista das estrelas do github
 
