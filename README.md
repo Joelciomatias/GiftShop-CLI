@@ -14,5 +14,4 @@ gcc gg./src/*.c ./src/*.h -o ./build/shop.exe ; ./build/shop.exe
 
 ### Admin area
 
-
 ![Alt text](img/admin.png)
