@@ -6,13 +6,13 @@ para o projeto integrador do curso de ADS Uninter
 
 ### Setup
 
-* gcc 6.3.0
+* gcc 6.3.0 | install on C:\MinGW directory
 * Windows 10 ou 11
 * vscode ou dev-C++
 
-#### Compilar os arquivos
+#### Compile and run
 ```
-gcc main.c pessoa.c login.c menu.c produtos.c selecao.c vendas.c cartao.c  -o Loja
+gcc gg./src/*.c ./src/*.h -o ./build/shop.exe ; ./build/shop.exe;
 ```
 
 #### Executar
