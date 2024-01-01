@@ -2,12 +2,12 @@
 // * operadora de cartao                              *
 // *                                                  *
 // *  ENTRADA:  numero do cartao                      *
-// *  SAIDA: Situação do pagamento                    *
+// *  SAIDA: Situaï¿½ï¿½o do pagamento                    *
 // * ************************************************/
 #include "cartao.h"
 
 void exibirCartao(char *cod){
-	char numero[16], codigo[3];
+	char numero[17], codigo[4];
 	
 	while(1){
 		system("cls");
@@ -15,21 +15,30 @@ void exibirCartao(char *cod){
 		printf("\n               PAGAMENTO\n");
 		printf("\n////////////////////////////////////////////////////\n");
 		
-		printf("\n\n Digite o número do cartão: ");
+		printf("\n\n Digite o nÃºmero do cartï¿½o: ");
 		fflush(stdin);
-		gets(numero);
-		//numero[strlen(numero) - 1] = '\0';
+		fgets(numero, sizeof(numero), stdin);
+
+		size_t len = strlen(numero);
+		if (len > 0 && numero[len - 1] == '\n') {
+			numero[len - 1] = '\0';
+		}
 		
-		printf("\n\n Digite o código de seguraça do cartão: ");
+		printf("\n\n Digite o cï¿½digo de seguraï¿½a do cartï¿½o: ");
 		fflush(stdin);
-		gets(codigo);
+		fgets(codigo, sizeof(codigo), stdin);
+
+		size_t len2 = strlen(codigo);
+		if (len2 > 0 && codigo[len2 - 1] == '\n') {
+			codigo[len2 - 1] = '\0';
+		}
 		
 		if(strlen(numero) < 16){
-			printf(" \n Número do cartão Inválido! ");
+			printf(" \n Nï¿½mero do cartï¿½o Invï¿½lido! ");
 			printf("\n\n Pressione Enter para continuar.");
 			getche();
 		}else if(strlen(codigo) < 3){
-			printf(" \n Código de segurança Inválido! ");
+			printf(" \n Cï¿½digo de seguranï¿½a Invï¿½lido! ");
 			printf("\n\n Pressione Enter para continuar.");
 			getche();
 		}else{

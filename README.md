@@ -1,24 +1,17 @@
-## Sistema-de-vendas-em-C
-Sistema de vendas por comando de linha na linguagem C 
-
-Desenvolvido por joelcio e Caio Felipe,
-para o projeto integrador do curso de ADS Uninter 
+##  GiftShop-CLI
+This is a Command Line Interface (CLI) Gift shop Management System written in pure C language for educational purposes
 
 ### Setup
 
-* gcc 6.3.0
-* Windows 10 ou 11
-* vscode ou dev-C++
+* gcc 6.3.0 | install on C:\MinGW
+* Windows 10 or 11
+* vscode editor
 
-#### Compilar os arquivos
+#### Compile and run
 ```
-gcc main.c pessoa.c login.c menu.c produtos.c selecao.c vendas.c cartao.c  -o Loja
-```
-
-#### Executar
-```
-    ./Loja
+gcc gg./src/*.c ./src/*.h -o ./build/shop.exe ; ./build/shop.exe
 ```
 
-#### CLICA NA ESTRELA! no canto direito superior para me ajudar a Conquista das estrelas do github
+### Admin area
 
+![Alt text](img/admin.png)
