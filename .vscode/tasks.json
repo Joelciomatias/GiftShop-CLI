@@ -10,6 +10,8 @@
 				"${workspaceFolder}\\src\\*.c",
 				"${workspaceFolder}\\src\\*.h",
 				"-g",
+                "-o",
+                "${workspaceFolder}\\build\\shopdebugger.exe"   
 			],
 			"options": {
 				"cwd": "${workspaceFolder}"

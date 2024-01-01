@@ -12,7 +12,7 @@ para o projeto integrador do curso de ADS Uninter
 
 #### Compile and run
 ```
-gcc gg./src/*.c ./src/*.h -o ./build/shop.exe ; ./build/shop.exe;
+gcc gg./src/*.c ./src/*.h -o ./build/shop.exe ; ./build/shop.exe
 ```
 
 #### Executar
