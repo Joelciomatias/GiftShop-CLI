@@ -9,7 +9,7 @@ This is a Command Line Interface (CLI) Gift shop Management System written in pu
 
 #### Compile and run
 ```
-gcc gg./src/*.c ./src/*.h -o ./build/shop.exe ; ./build/shop.exe
+gcc ./src/*.c ./src/*.h -o ./build/shop.exe ; ./build/shop.exe
 ```
 
 ### Admin area

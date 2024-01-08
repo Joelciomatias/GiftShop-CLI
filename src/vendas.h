@@ -14,7 +14,7 @@
 // CONSTANTES PARA O BUFFERS DE TECLADO E OUTROS
 #define MAX 30
 
-#define ARQ_VENDAS "vendas.txt"
+#define ARQ_VENDAS "data/vendas.txt"
 
 
 FILE *ven;

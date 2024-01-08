@@ -13,7 +13,7 @@
 // CONSTANTES PARA O BUFFERS DE TECLADO E OUTROS
 #define MAX 30
 
-#define ARQ_PRODUTOS "produto.txt"
+#define ARQ_PRODUTOS "data/produto.txt"
 
 FILE *fp;
 

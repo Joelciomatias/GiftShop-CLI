@@ -12,7 +12,7 @@
 // CONSTANTES PARA O BUFFERS DE TECLADO E OUTROS
 #define MAX 30
 
-#define ARQ_PESSOA "pessoa.txt"
+#define ARQ_PESSOA "data/pessoa.txt"
 
 FILE *fp;
 
