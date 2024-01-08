@@ -1,8 +1,8 @@
-// * Procedimento que implementa as funções    	      *
+// * Procedimento que implementa as funï¿½ï¿½es    	      *
 // * relacionadas a pessoa                            *
 // *                                                  *
 // *  ENTRADA:  N/A                                   *
-// *  SAIDA: Exibição dos dados                       *
+// *  SAIDA: Exibiï¿½ï¿½o dos dados                       *
 // * ************************************************/
 //INCLUSAO DO CABECARIO DE PESSOA
 #include "pessoa.h"
@@ -12,7 +12,7 @@ void BasePessoa(){
 	if(fp==NULL){
         fp = fopen(ARQ_PESSOA, "w+b"); 
         if(fp==NULL){
-            printf(" Erro fatal: impossível criar arquivo de dados\n");
+            printf(" Erro fatal: impossï¿½vel criar arquivo de dados\n");
             exit(1);
         }
     }
@@ -31,7 +31,7 @@ void InicializarPessoa(Pessoa *pessoa){
 //IMPLEMENTACAO DA FUNCAO QUE REALIZA A LEITURA DOS DADOS DO TECLADO
  void LerPessoa(Pessoa *pessoa){
  	sprintf(pessoa->cod, "%i", CarregaCodigoPes());
- 	printf("Código: %s",pessoa->cod);
+ 	printf("Cï¿½digo: %s",pessoa->cod);
 	
  	printf("\n\nNome: ");
  	fflush(stdin);
@@ -55,7 +55,7 @@ void InicializarPessoa(Pessoa *pessoa){
  
  //IMPLEMENTACAO DA FUNCAO EXIBICAO
  void ExibirPessoa(Pessoa *pessoa){
- 	printf ("\n CÓDIGO: %s", pessoa->cod); 
+ 	printf ("\n Cï¿½DIGO: %s", pessoa->cod); 
  	printf ("\n Nome: %s", pessoa->nome);
 	printf ("\n CPF: %i", pessoa->cpf);
 	printf ("\n Email: %s", pessoa->email);
@@ -135,7 +135,7 @@ void InicializarPessoa(Pessoa *pessoa){
 	 	 		sleep(1);
 	 	 		break;
 	 	}else{
-	 		printf(" \n Opção inválida! \n");
+	 		printf(" \n Opï¿½ï¿½o invï¿½lida! \n");
 	 	 		sleep(1);
 		}
 	 	 	
@@ -173,7 +173,7 @@ void InicializarPessoa(Pessoa *pessoa){
 	 }
 	  //verificador pra ver se tem registros no arquivo
 	 if(linha == 0){
-	 	printf("\n Não Contem registros \n"); 
+	 	printf("\n Nï¿½o Contem registros \n"); 
 	 }
 	 printf("\n Precione ENTER para voltar ao MENU.");
 	 getche();
@@ -192,7 +192,7 @@ void InicializarPessoa(Pessoa *pessoa){
  	char valor[MAX];
  	strcpy(valor,"");
  	
-	int pos = 0, linha = 0,op;
+	int pos = 0, linha = 0;
 
 	//colocar o cursor no inicio do arquivo
     rewind(fp);
@@ -210,7 +210,7 @@ void InicializarPessoa(Pessoa *pessoa){
 			//realiza a leitura dos registros
 			while(fread(&pessoa, sizeof(Pessoa), 1, fp)){
 				//realiza os comparativos
-			    if(pessoa.ativo != 0 && strstr(pessoa.nome,valor) || pessoa.ativo != 0 && strstr(pessoa.cod,valor)){
+			    if((pessoa.ativo != 0 && strstr(pessoa.nome,valor)) || (pessoa.ativo != 0 && strstr(pessoa.cod,valor))){
 			    	ExibirPessoa(&pessoa);
 			    	//informa se achou o registro
 			    	pos = 1;
@@ -222,7 +222,7 @@ void InicializarPessoa(Pessoa *pessoa){
 				linha++;
 			}
 			if(pos == 0){
-				printf("Registro não encontrado");
+				printf("Registro nï¿½o encontrado");
 			}
 			printf("\n\n Precione ENTER para continuar.");
 			getche();
@@ -231,7 +231,8 @@ void InicializarPessoa(Pessoa *pessoa){
 		}
 	}
 	fclose(fp);
- }
+	return 0;
+}
 
 ////IMPLEMENTACAO DA FUNCAO DE EXCLUSAO
 void ExcluirPessoa(){

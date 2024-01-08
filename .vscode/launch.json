@@ -8,7 +8,7 @@
             "name": "Launch Debugger (gdb)",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/shopdebugger.exe",
+            "program": "${workspaceFolder}/dist/shopdebugger.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

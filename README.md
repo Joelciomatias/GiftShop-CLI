@@ -8,8 +8,13 @@ This is a Command Line Interface (CLI) Gift shop Management System written in pu
 * vscode editor
 
 #### Compile and run
+
+``` 
+make ; make run
 ```
-gcc ./src/*.c ./src/*.h -o ./build/shop.exe ; ./build/shop.exe
+or
+```
+gcc ./src/*.c ./src/*.h -o ./dist/shop.exe ; ./dist/shop.exe
 ```
 
 ### Admin area
